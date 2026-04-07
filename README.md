@@ -19,7 +19,7 @@ cd merge_practice
 3. Activate the environment:
 
 ```
-conda activate bioinformatics_pandas
+conda activate merge_practice
 ```
 
 ## Run
