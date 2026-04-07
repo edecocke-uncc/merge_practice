@@ -15,8 +15,12 @@ git clone https://github.com/edecocke-uncc/merge_practice.git
 ```
 cd merge_practice
 ```
+3. Create the environment:
+```bash
+conda env create -f environment.yml
+```
 
-3. Activate the environment:
+4. Activate the environment:
 
 ```
 conda activate merge_practice
