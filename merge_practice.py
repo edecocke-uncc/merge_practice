@@ -14,11 +14,6 @@ tend to accumulate more mutations.
 
 import pandas as pd
 
-
-# ---------------------------------------------------------------------------
-# Classes
-# ---------------------------------------------------------------------------
-
 class TheMutantMashup:
     """
     Loads, merges, and analyzes gene expression and mutation datasets.
@@ -80,9 +75,9 @@ class TheMutantMashup:
             The merged DataFrame containing expression and mutation columns.
         """
         self.df_merged = pd.merge(self.df_expression, self.df_mutations, on='Gene')
-        print(f"\n{'-'*60}")
+        print(f"\n{'-'*70}")
         print("Merged DataFrame")
-        print(f"{'-'*60}")
+        print(f"{'-'*70}")
         print(self.df_merged)
         return self.df_merged
 
@@ -178,11 +173,6 @@ class TheMutantMashup:
         self.df_merged.to_csv(filename, index=False)
         print(f"\n Results saved to '{filename}'")
 
-
-# ---------------------------------------------------------------------------
-# Reflection
-# ---------------------------------------------------------------------------
-
 def interpret_the_chaos() -> None:
     """
     Prints an interpretation of the correlation results
@@ -194,9 +184,6 @@ def interpret_the_chaos() -> None:
         "   in actively transcribed genomic regions, where increased\n"
         "   replication and transcription activity raises the likelihood\n"
         "   of replication errors or DNA damage.\n\n"
-        "   Note: correlation does not imply causation. Additional\n"
-        "   statistical testing would be required before drawing\n"
-        "   biological conclusions from this data."
     )
 
     print(f"\n{'-'*60}")
